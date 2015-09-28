@@ -156,10 +156,9 @@ $(document).ready(function(){
 				'top': - position.top + 8, 
 				'width':'74rem', 
 				'height': height + 'px',
-			}, 1000, function() {
-				$(this).on('click', closeItemWerk);
-			})
+			}, 1000)
 			.css({
+				'cursor':'auto',
 				'z-index':'1000',
 				'-webkit-filter':'drop-shadow(0px 0px 3px rgba(51,51,51,0.9))',
   				'-moz-filter':'drop-shadow(0px 0px 3px rgba(51,51,51,0.9))',
@@ -173,8 +172,7 @@ $(document).ready(function(){
 	
 	function closeItemWerk() {
 		
-		$(this)
-			.off('click', closeItemWerk)
+		$('.itemWerk')
 			.animate({
 				'left':'0',
 				'top':'0', 
@@ -185,6 +183,7 @@ $(document).ready(function(){
 				$(this)
 					.on('click', openItemWerk)
 			})
+			.css({'cursor':'pointer'})
 			.hover(mouseEnterItemWork, mouseLeaveItemWork);
 		$(".overlay")
 			.css({
@@ -196,7 +195,8 @@ $(document).ready(function(){
 			}, 1000);
 	};
 		
-	$('.itemWerk').on('click', openItemWerk)
+	$('.itemWerk').on('click', openItemWerk);
+	$('.close').on ('click', closeItemWerk);	
 		
 	$("a, img").click(function(event){
 		event.stopPropagation();

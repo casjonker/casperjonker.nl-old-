@@ -516,6 +516,63 @@ footer {
 	margin-top: 2rem;
 }
 
+.controlsWerk {
+	position: absolute;
+	height: calc(100% - 12.5rem);
+	top: 11.5rem;
+	left: calc(1184px - 1rem);
+}
+
+.controlIcon {
+	cursor: pointer;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+}
+
+.controlIcon a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.top {
+	top: 0;
+	right: 0;
+}
+.bottom {
+	bottom: 0;
+	right: 0;
+}
+
+.close {
+	background:url(img/iconClose.png) no-repeat;
+	background-size: contain;
+}
+
+.close:hover {
+	background:url(img/iconCloseHover.png) no-repeat;
+	background-size: contain;
+	-webkit-filter: drop-shadow(0px 0px 3px rgba(51,51,51,0.9));
+  	-moz-filter: drop-shadow(0px 0px 3px rgba(51,51,51,0.9));
+	filter: drop-shadow(0px 0px 3px rgba(51,51,51,0.9));
+}
+
+.up {
+	bottom: calc(50px + 1rem);
+	right: 0;
+	background:url(img/iconUp.png);
+	background-size: contain;
+}
+
+.up:hover {
+	background:url(img/iconUpHover.png);
+	background-size: contain;
+	-webkit-filter: drop-shadow(0px 0px 3px rgba(51,51,51,0.9));
+  	-moz-filter: drop-shadow(0px 0px 3px rgba(51,51,51,0.9));
+	filter: drop-shadow(0px 0px 3px rgba(51,51,51,0.9));
+}
+
 /* CONTACT PAGE */
 /* CONTACT PAGE */
 /* CONTACT PAGE */
@@ -539,6 +596,7 @@ footer {
 }
 
 .socialIcon {
+	cursor: pointer;
 	position: relative;
 	display: inline-block;
 	width: 50px;
@@ -555,7 +613,7 @@ footer {
 .socialIcon span {
 	position: absolute;
 	top: calc(50% - 10px);
-	right: 25px;
+	right: 15px;
 }
 
 #mail {
