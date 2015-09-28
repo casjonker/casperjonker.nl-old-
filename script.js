@@ -148,6 +148,7 @@ $(document).ready(function(){
 		var height = $('.tekstWerk', this).height() + 168;
 		
 		$(this)
+			.stop()
 			.unbind('mouseenter mouseleave')
 			.off('click', openItemWerk)
 			.animate({
@@ -166,12 +167,13 @@ $(document).ready(function(){
 		$(".overlay")
 			.css({'display':'none'});		
 		$("#wrapperPortfolio")
+			.stop()
 			.animate({'height': height + 16 + 'px'}, 1000);
 	};
 	
 	function closeItemWerk() {
-		
 		$('.itemWerk')
+			.stop()
 			.animate({
 				'left':'0',
 				'top':'0', 
@@ -189,6 +191,7 @@ $(document).ready(function(){
 				'display':'inherit'
 			});
 		$("#wrapperPortfolio")
+			.stop()
 			.animate({
 				'height':'25rem'
 			}, 1000);
@@ -224,6 +227,7 @@ $(document).ready(function(){
 		var height = $('.tekstWerk', this).height() + 174;
 		
 		$(this)
+			.stop()
 			.unbind('mouseenter mouseleave')
 			.off('click', openItemWerkMobile)
 			.animate({
@@ -239,6 +243,7 @@ $(document).ready(function(){
 	function closeItemWerkMobile() {
 		
 		$(this)
+			.stop()
 			.off('click', closeItemWerkMobile)
 			.animate({
 				'left':'0',
