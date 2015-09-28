@@ -138,7 +138,6 @@ $(document).ready(function(){
 	$(window).load(function() {
 		$('.imgWerk').each(function () {
 			var height = $(this).height();
-			console.log(height);
 			$(this).css({'top':'calc(50% - ' + height / 2 + 'px'});
 		})
 	});
