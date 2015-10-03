@@ -19,6 +19,11 @@ body {
 header {
 	width: 55rem;
 	margin: auto;
+	vertical-align: middle;
+}
+
+header img {
+	height: 1.8rem
 }
 
 h1 {
