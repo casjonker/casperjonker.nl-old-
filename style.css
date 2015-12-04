@@ -68,6 +68,13 @@ p.close:hover {
 	color: #333;
 }
 
+p.quote {
+	padding: 1.5rem 3rem;
+	margin: .5rem 0rem 1rem;
+	font-style: italic;
+	background-color: #ffd562;
+}
+
 a {
 	text-decoration: none;
 	color: #C00;
@@ -97,6 +104,7 @@ table {
 
 ul {
 	list-style-type: none;
+	padding: .5rem 0rem 1rem;
 }
 
 nav ul {
