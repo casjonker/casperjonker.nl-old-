@@ -11,7 +11,7 @@ html {
 }
 
 body {
-	font-family: Consolas, Monaco, monospace;
+	font-family: Trebuchet, arial, sans-serif;
 	width: 100%;
 	color: #333;
 }
@@ -19,11 +19,16 @@ body {
 header {
 	width: 55rem;
 	margin: auto;
+	padding-top: 2.5rem;
 	vertical-align: middle;
 }
 
 header img {
-	height: 1.8rem
+	height: 2.65rem
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Consolas, Monaco, monospace;
 }
 
 h1 {
@@ -51,7 +56,7 @@ article.contentBlok {
 p {
 	white-space: normal;
 	font-size: 1.1rem;
-	line-height: 1.3rem;
+	line-height: 1.5rem;
 	padding: .5rem 0rem 1rem;
 }
 
@@ -194,9 +199,15 @@ nav ul li {
 .wrapper {
 	width: 75rem;
 	margin: auto;
+	-webkit-box-shadow: 0px 0px 5px rgba(51,51,51,0.9);
+	-moz-box-shadow: 0px 0px 5px rgba(51,51,51,0.9);
+	box-shadow: 0px 0px 5px rgba(51,51,51,0.9);	
 }
 
 #wrapperHome {
+	-webkit-filter: drop-shadow(0px 0px 2px rgba(51,51,51,0.9));
+  	-moz-filter: drop-shadow(0px 0px 2px rgba(51,51,51,0.9));
+	filter: drop-shadow(0px 0px 2px rgba(51,51,51,0.9));
 }
 
 #wrapperPortfolio {
@@ -214,6 +225,23 @@ nav ul li {
 	background-repeat: no-repeat;
 	background-color: #b2964a;
 	position: relative;
+}
+
+#background-div {
+	display: block;
+	width: 100%;
+	position: absolute;
+}
+
+#background-div > div {
+	display: block;
+	height: 14rem;
+	width: 100%;
+	background-color: #CCCCCC;
+	background: url(img/background.jpg) center repeat;
+	background-height: 100%;
+	position: relative;
+	top:6rem;
 }
 
 /* HOMEPAGE */
@@ -236,11 +264,9 @@ nav ul li {
 
 .hoofdstuk:hover {
 	border-color: #ffba00;
-	
-	-webkit-filter: drop-shadow(0px 0px 3px rgba(51,51,51,0.9));
-  	-moz-filter: drop-shadow(0px 0px 3px rgba(51,51,51,0.9));
-	filter: drop-shadow(0px 0px 3px rgba(51,51,51,0.9));
-	
+	-webkit-box-shadow: 0px 0px 12px rgba(51,51,51,0.4);
+	-moz-box-shadow: 0px 0px 12px rgba(51,51,51,0.4);
+	box-shadow: 0px 0px 12px rgba(51,51,51,0.4);
 	z-index: 900;
 }
 
@@ -260,7 +286,7 @@ nav ul li {
 	bottom: 1rem;
 	left: calc(50% - .5rem);
 	color: white;
-	font-size: 2m;
+	font-size: 2rem;
 	padding: 0;
 	margin: 0;
 	-webkit-transform: rotate(-90deg);
@@ -283,7 +309,6 @@ nav ul li {
 
 .hoofdstuk p {
 	color: white;
-	line-height: 1.5rem;
 	margin-left: 130px;
 	width: 25rem;
 	text-shadow: 0px 0px 1px #666;
@@ -338,9 +363,9 @@ nav ul li {
 	background-color: #72aadd;
 	cursor: auto;
 	border-color: #ffba00;
-	-webkit-filter: drop-shadow(0px 0px 3px rgba(51,51,51,0.9));
-  	-moz-filter: drop-shadow(0px 0px 3px rgba(51,51,51,0.9));
-	filter: drop-shadow(0px 0px 3px rgba(51,51,51,0.9));
+	-webkit-box-shadow: 0px 0px 12px rgba(51,51,51,0.4);
+	-moz-box-shadow: 0px 0px 12px rgba(51,51,51,0.4);
+	box-shadow: 0px 0px 12px rgba(51,51,51,0.4);
 }
 
 #hoofdstukTwee {
@@ -637,9 +662,9 @@ footer {
 #mail:hover {
 	background:url(img/iconMailHover.png);
 	background-size: contain;
-	-webkit-filter: drop-shadow(0px 0px 3px rgba(51,51,51,0.9));
-  	-moz-filter: drop-shadow(0px 0px 3px rgba(51,51,51,0.9));
-	filter: drop-shadow(0px 0px 3px rgba(51,51,51,0.9));
+	-webkit-filter: drop-shadow(0px 0px 2px rgba(51,51,51,0.9));
+  	-moz-filter: drop-shadow(0px 0px 2px rgba(51,51,51,0.9));
+	filter: drop-shadow(0px 0px 2px rgba(51,51,51,0.9));
 }
 
 #linkedIn {
@@ -650,9 +675,9 @@ footer {
 #linkedIn:hover {
 	background:url(img/iconLinkedInHover.png);
 	background-size: contain;
-	-webkit-filter: drop-shadow(0px 0px 3px rgba(51,51,51,0.9));
-  	-moz-filter: drop-shadow(0px 0px 3px rgba(51,51,51,0.9));
-	filter: drop-shadow(0px 0px 3px rgba(51,51,51,0.9));
+	-webkit-filter: drop-shadow(0px 0px 2px rgba(51,51,51,0.9));
+  	-moz-filter: drop-shadow(0px 0px 2px rgba(51,51,51,0.9));
+	filter: drop-shadow(0px 0px 2px rgba(51,51,51,0.9));
 }
 
 #phone {
@@ -664,9 +689,9 @@ footer {
 #phone:hover {
 	background:url(img/iconPhoneHover.png);
 	background-size: contain;
-	-webkit-filter: drop-shadow(0px 0px 3px rgba(51,51,51,0.9));
-  	-moz-filter: drop-shadow(0px 0px 3px rgba(51,51,51,0.9));
-	filter: drop-shadow(0px 0px 3px rgba(51,51,51,0.9));
+	-webkit-filter: drop-shadow(0px 0px 2px rgba(51,51,51,0.9));
+  	-moz-filter: drop-shadow(0px 0px 2px rgba(51,51,51,0.9));
+	filter: drop-shadow(0px 0px 2px rgba(51,51,51,0.9));
 }
 	
 /* SELF TYPE MACHINE! */
@@ -827,7 +852,7 @@ footer {
 	}
 	
 	.wrapper {
-		width: 100%;
+		width: 100%;		
 	}
 	
 	/* HOME MOBILE */
@@ -841,9 +866,9 @@ footer {
 	}
 	
 	.hoofdstuk:hover {
-		-webkit-filter: none;
-		-moz-filter: none;
-		filter: none;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
 		z-index: 900;
 		height: inherit;
 	}
@@ -908,9 +933,9 @@ footer {
 		width: 100%;
 		height: inherit;
 		background-image: none;
-		-webkit-filter: none;
-		-moz-filter: none;
-		filter: none;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
 	}
 	
 	#hoofdstukTwee {
